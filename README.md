@@ -52,4 +52,5 @@ This document outlines the steps taken to set up and implement a DBT (Data Build
 
 - Documented the DBT models, including descriptions of each model and their columns.
 - Generated project documentation using DBT's `docs generate` feature, creating a web-based documentation site for easy reference and understanding of the data models and relationships.
+- Use `dbt docs serve` to view the documentation in a web-browser
 
