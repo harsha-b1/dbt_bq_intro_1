@@ -21,7 +21,7 @@ This document outlines the steps taken to set up and implement a DBT (Data Build
 
 ### Initialising DBT Project:
 
-- Initialized a new DBT project `dbt init your_project_name`.
+- Initialized a new DBT project `dbt init project_name`.
 - Set up the DBT project directory structure with the necessary configurations.
 
 
