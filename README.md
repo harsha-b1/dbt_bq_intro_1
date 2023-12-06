@@ -12,7 +12,7 @@ This document outlines the steps taken to set up and implement a DBT (Data Build
 ### BigQuery Dataset and Table:
 
 - Created a new dataset in BigQuery.
-- Imported data from a Kaggle CSV dataset into a BigQuery table. 
+- Imported data from a [Kaggle CSV dataset ](https://www.kaggle.com/datasets/lava18/google-play-store-apps) into a BigQuery table. 
 
 ### Service Account and Permissions:
 
@@ -21,7 +21,7 @@ This document outlines the steps taken to set up and implement a DBT (Data Build
 
 ### Initialising DBT Project:
 
-- Initialized a new DBT project using Visual Studio Code (VS Code) as the development environment.
+- Initialized a new DBT project `dbt init your_project_name`.
 - Set up the DBT project directory structure with the necessary configurations.
 
 
@@ -38,7 +38,7 @@ This document outlines the steps taken to set up and implement a DBT (Data Build
 ### Jinja Templating and Macros:
 
 - Implemented Jinja templating in SQL queries for dynamic SQL generation and to reference DBT models and sources.
-- Created custom macros to encapsulate reusable logic and improve code efficiency and readability.
+- Created custom macros to encapsulate reusable logic and improve code efficiency and readability under `macros`.
 
 ### Schema Tests:
 
@@ -46,7 +46,7 @@ This document outlines the steps taken to set up and implement a DBT (Data Build
 
 ### Custom Data Tests:
 
-- Developed custom SQL queries in the `tests` directory to perform specific data validation checks beyond the default schema tests.
+- Developed custom SQL queries in the `tests` directory to perform specific data validation checks beyond the default schema tests like checking if Rating values are with in range between 0 and 5.
 
 ### Documentation:
 
