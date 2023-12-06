@@ -1,0 +1,19 @@
+version: 1
+
+models:
+  - name: select_all
+    description: "A summary of apps by category"
+    columns:
+      - name: APP
+        description: "The name of the app"
+        tests:
+          - not_null
+          - unique
+      - name: RATING
+        description: "The average rating of apps in the category"
+        tests:
+          - not_null
+      - name: CATEGORY
+        description: "The category of apps"
+        tests:
+          - unique    

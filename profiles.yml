@@ -1,0 +1,11 @@
+dbt_bq_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dbt-bq-project-407212
+      dataset: playstore_dataset
+      threads: 1
+      keyfile: service_account.json
+      timeout_seconds: 300
